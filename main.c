@@ -748,7 +748,7 @@ void menu_cliente() {
         printf("+------------------------------------+\n");
         printf("|         AREA DO CLIENTE            |\n");
         printf("+------------------------------------+\n");
-        printf("|  Ola, %-28s|\n", cli->nome);
+        printf("|  Ola, %-29s|\n", cli->nome);
         printf("|  Saldo: R$ %-24.2f|\n", cli->saldo);
         printf("+------------------------------------+\n");
         printf("|  1. Ver produtos                   |\n");
