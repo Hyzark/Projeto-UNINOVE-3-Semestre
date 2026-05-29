@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone | Sobre Nós</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="sobre">
+  <header class="site-header">
+    <a class="logo" href="catalogo.html"><span>TZ</span>TechZone</a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="catalogo.html">Catálogo</a>
+      <a class="client-link hidden" href="pedidos.html">Pedidos</a>
+      <a class="client-link hidden" href="fale-conosco.html">Fale Conosco</a>
+      <a class="active" href="sobre.html">Sobre Nós</a>
+      <a id="admin-link" class="hidden" href="admin.html">Admin</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-btn client-link hidden" href="pedidos.html" aria-label="Carrinho"><span>Carrinho</span><b id="cart-count">0</b></a>
+      <a id="account-avatar" class="account-avatar client-link hidden" href="conta.html" aria-label="Minha Conta"></a>
+      <button id="logout-btn" class="btn ghost small" type="button">Sair</button>
+    </div>
+  </header>
+
+  <main class="about-page">
+    <section class="about-hero">
+      <p class="eyebrow">Sobre a TechZone</p>
+      <h1>Oferecemos inovação ao conectar pessoas aos melhores produtos de tecnologia.</h1>
+      <p>A TechZone nasceu como um projeto acadêmico de e-commerce, evoluindo de um sistema em C com estruturas de clientes, produtos, pedidos, pagamentos e vendas para uma interface web persistente, navegável e mais próxima de um produto real.</p>
+    </section>
+
+    <section class="about-grid">
+      <article>
+        <h2>História</h2>
+        <p>Tudo começou em um quarto pequeno, iluminado apenas pelo brilho dos monitores e pelo som das teclas sendo pressionadas madrugada adentro. Um grupo de amigos universitários, apaixonados por games e tecnologia, percebeu que havia algo em comum entre eles e milhares de outros jogadores: a busca por periféricos de qualidade que realmente elevassem a experiência de jogo.</p>
+        <br>
+        <p>Frustrados com a dificuldade de encontrar produtos que unissem desempenho, estilo e preço justo, decidiram transformar essa necessidade em oportunidade. Nasceu então a ideia de criar uma loja online dedicada exclusivamente ao universo gamer, onde cada item fosse escolhido com cuidado, testado e aprovado por quem realmente entende do assunto.</p>
+      </article>
+      <article>
+        <h2>Operação</h2>
+        <p>Nossa operação é voltada para o comércio eletrônico de produtos de tecnologia, oferecendo praticidade, segurança e eficiência em todas as etapas do processo. Trabalhamos com a seleção, divulgação e comercialização de equipamentos e acessórios tecnológicos, buscando sempre qualidade, inovação e uma boa experiência para o cliente.</p>
+        <br>
+        <p>A empresa atua desde a gestão do catálogo de produtos até o atendimento ao consumidor, incluindo organização de estoque, processamento de pedidos, atualização do site, marketing digital e suporte pós-venda. Também realizamos integração entre sistemas, análise de dados e otimização de processos para garantir maior agilidade nas operações e confiabilidade nas informações.</p>
+        <br>
+        <p>Nosso foco é unir tecnologia, design e eficiência operacional para proporcionar uma experiência moderna, intuitiva e acessível aos clientes.</p>
+      </article>
+      <article>
+        <h2>Valores</h2>
+        <p>Nossa empresa é guiada por princípios que garantem qualidade, confiança e compromisso em todas as nossas operações. Buscamos oferecer soluções tecnológicas com responsabilidade, transparência e foco total na satisfação do cliente.</p>
+        <br>
+        <p>Valorizamos a inovação constante, acompanhando as tendências do mercado para proporcionar produtos e serviços modernos e eficientes. Acreditamos também na ética profissional, no trabalho em equipe e no respeito aos clientes, parceiros e colaboradores.</p>
+        <br>
+        <p>Prezamos pela organização, segurança das informações e excelência no atendimento, sempre buscando melhorar nossos processos e criar uma experiência prática, confiável e acessível para todos os consumidores.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>TechZone</strong><p>Loja acadêmica de tecnologia com arquitetura front-end modular.</p></div>
+    <div><strong>Links úteis</strong><a href="catalogo.html">Catálogo</a><a href="pedidos.html">Pedidos</a><a href="fale-conosco.html">Fale Conosco</a><a href="sobre.html">Sobre Nós</a></div>
+    <div><strong>Contato</strong><span>tzstore@gmail.com
+  </span><span>(11) 94002-2026</span><span>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</span></div>
+    <div><strong>Pagamento</strong><span>Saldo TechZone</span><span>Pix, crédito e débito simulados</span></div>
+  </footer>
+
+  <div id="toast-root" aria-live="polite"></div>
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

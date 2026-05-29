@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone | Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="catalogo">
+  <header class="site-header">
+    <a class="logo" href="catalogo.html"><span>TZ</span>TechZone</a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="active" href="catalogo.html">Catálogo</a>
+      <a class="client-link hidden" href="pedidos.html">Pedidos</a>
+      <a class="client-link hidden" href="fale-conosco.html">Fale Conosco</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a id="admin-link" class="hidden" href="admin.html">Admin</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-btn client-link hidden" href="pedidos.html" aria-label="Carrinho"><span>Carrinho</span><b id="cart-count">0</b></a>
+      <a id="account-avatar" class="account-avatar client-link hidden" href="conta.html" aria-label="Minha Conta"></a>
+      <button id="logout-btn" class="btn ghost small" type="button">Sair</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog-head">
+      <div>
+        <p class="eyebrow">Produtos em destaque</p>
+        <h1>Catálogo TechZone</h1>
+        <p class="muted">Adicione ao carrinho direto da vitrine ou abra o produto para ver detalhes técnicos.</p>
+      </div>
+      <div class="toolbar">
+        <input id="product-search" type="search" placeholder="Buscar produto">
+        <select id="stock-filter">
+          <option value="todos">Todos</option>
+          <option value="disponiveis">Disponíveis</option>
+          <option value="baixo">Estoque baixo</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="content-wrap">
+      <div id="products-grid" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>TechZone</strong><p>Loja acadêmica de tecnologia com arquitetura front-end modular.</p></div>
+    <div><strong>Links úteis</strong><a href="catalogo.html">Catálogo</a><a href="pedidos.html">Pedidos</a><a href="fale-conosco.html">Fale Conosco</a><a href="sobre.html">Sobre Nós</a></div>
+    <div><strong>Contato</strong><span>tzstore@gmail.com
+  </span><span>(11) 94002-2026</span><span>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</span></div>
+    <div><strong>Pagamento</strong><span>Saldo TechZone</span><span>Pix, crédito e débito simulados</span></div>
+  </footer>
+
+  <div id="toast-root" aria-live="polite"></div>
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

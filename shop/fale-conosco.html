@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone | Fale Conosco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="fale-conosco">
+  <header class="site-header">
+    <a class="logo" href="catalogo.html"><span>TZ</span>TechZone</a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="catalogo.html">Catálogo</a>
+      <a class="client-link" href="pedidos.html">Pedidos</a>
+      <a class="client-link active" href="fale-conosco.html">Fale Conosco</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a id="admin-link" class="hidden" href="admin.html">Admin</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-btn client-link" href="pedidos.html" aria-label="Carrinho"><span>Carrinho</span><b id="cart-count">0</b></a>
+      <a id="account-avatar" class="account-avatar client-link" href="conta.html" aria-label="Minha Conta"></a>
+      <button id="logout-btn" class="btn ghost small" type="button">Sair</button>
+    </div>
+  </header>
+
+  <main class="content-wrap support-layout">
+    <section class="support-panel">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Atendimento</p>
+          <h1>Fale Conosco</h1>
+          <p class="muted">Escolha um tópico de suporte ou abra um chamado direto com nossa equipe.</p>
+        </div>
+      </div>
+
+      <div class="contact-info-grid" aria-label="Informações de contato">
+        <article>
+          <span>Telefone / WhatsApp</span>
+          <strong>(11) 94002-2026</strong>
+          <small>Atendimento de segunda a sexta, das 9h às 18h.</small>
+        </article>
+        <article>
+          <span>E-mail</span>
+          <strong>tzstore@gmail.com</strong>
+          <small>Resposta em até 1 dia útil.</small>
+        </article>
+        <article>
+          <span>Endereço</span>
+          <strong>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</strong>
+          <small>Loja conceito TechZone.</small>
+        </article>
+      </div>
+
+      <div class="support-options" id="support-options">
+        <button class="support-option active" type="button" data-support-topic="suporte">Falar diretamente com o suporte</button>
+        <button class="support-option" type="button" data-support-topic="compra">Problema ao efetuar a compra</button>
+        <button class="support-option" type="button" data-support-topic="conta">Problemas com a conta</button>
+        <button class="support-option" type="button" data-support-topic="uso">Como utilizar o site</button>
+        <button class="support-option" type="button" data-support-topic="regras">Regras de funcionamento</button>
+      </div>
+
+      <div id="support-guidance" class="support-guidance"></div>
+
+      <form id="support-form" class="support-form">
+        <div class="admin-form-grid">
+          <label>Nome
+            <input id="contact-name" required placeholder="Seu nome">
+          </label>
+          <label>E-mail
+            <input id="contact-email" type="email" required placeholder="seuemail@gmail.com">
+          </label>
+          <label>Categoria
+            <select id="ticket-category" required>
+              <option value="Problema">Problema</option>
+              <option value="Dúvida">Dúvida</option>
+              <option value="Reclamação">Reclamação</option>
+              <option value="Crítica">Crítica</option>
+            </select>
+          </label>
+        </div>
+        <label>Mensagem
+          <textarea id="ticket-message" rows="6" placeholder="Descreva sua situação com detalhes." required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Enviar chamado</button>
+      </form>
+    </section>
+
+    <section class="support-panel">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Histórico</p>
+          <h2>Meus chamados</h2>
+        </div>
+      </div>
+      <div id="client-ticket-list" class="ticket-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>TechZone</strong><p>Loja acadêmica de tecnologia com arquitetura front-end modular.</p></div>
+    <div><strong>Links úteis</strong><a href="catalogo.html">Catálogo</a><a href="pedidos.html">Pedidos</a><a href="fale-conosco.html">Fale Conosco</a><a href="sobre.html">Sobre Nós</a></div>
+    <div><strong>Contato</strong><span>tzstore@gmail.com
+  </span><span>(11) 94002-2026</span><span>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</span></div>
+    <div><strong>Pagamento</strong><span>Saldo TechZone</span><span>Pix, crédito e débito simulados</span></div>
+  </footer>
+
+  <div id="toast-root" aria-live="polite"></div>
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

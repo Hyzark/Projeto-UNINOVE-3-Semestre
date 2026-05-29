@@ -1,0 +1,36 @@
+Atualizações realizadas no front-end TechZone
+
+Objetivo:
+Alinhar o front-end estático com a lógica do back-end em C, sem integração real, apenas simulando o comportamento do sistema.
+
+Principais mudanças:
+
+1. Produtos simulados
+- Os produtos no JavaScript agora usam uma estrutura mais próxima do back-end:
+  id, nome, preco, quantidade, imagem, descricao e especificacoes.
+
+2. Controle de estoque
+- Cada produto possui quantidade em estoque.
+- O card exibe estoque disponível, estoque baixo ou sem estoque.
+- Produtos sem estoque ficam indisponíveis para adicionar ao carrinho.
+- O carrinho impede adicionar quantidade maior do que o estoque disponível.
+
+3. Saldo do cliente
+- Foi criado um cliente padrão simulado com saldo inicial de R$ 500,00.
+- O saldo aparece no topo e no carrinho.
+
+4. Fluxo de pedido e pagamento
+- O botão do carrinho foi alterado de "Finalizar Compra" para "Gerar Pedido".
+- Ao gerar um pedido, ele fica com status "Pendente".
+- O pagamento é feito separadamente na área "Pedidos".
+- O estoque só é reduzido depois que o pedido é pago.
+- Se o saldo for insuficiente, o pagamento é bloqueado.
+
+5. Área de pedidos
+- Foi adicionada uma tela/modal "Meus Pedidos".
+- Ela mostra pedidos pendentes e pagos.
+- Pedidos pendentes podem ser pagos com o saldo do cliente.
+- Também foi adicionado histórico de pagamentos.
+
+Observação:
+O projeto continua sendo 100% front-end estático, usando HTML, CSS e JavaScript puro. Os dados são armazenados apenas em memória enquanto a página está aberta.

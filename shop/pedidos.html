@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone | Carrinho e Pedidos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="pedidos">
+  <header class="site-header">
+    <a class="logo" href="catalogo.html"><span>TZ</span>TechZone</a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="catalogo.html">Catálogo</a>
+      <a class="client-link active" href="pedidos.html">Pedidos</a>
+      <a class="client-link hidden" href="fale-conosco.html">Fale Conosco</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a id="admin-link" class="hidden" href="admin.html">Admin</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-btn client-link" href="pedidos.html" aria-label="Carrinho"><span>Carrinho</span><b id="cart-count">0</b></a>
+      <a id="account-avatar" class="account-avatar client-link" href="conta.html" aria-label="Minha Conta"></a>
+      <button id="logout-btn" class="btn ghost small" type="button">Sair</button>
+    </div>
+  </header>
+
+  <main class="content-wrap orders-layout">
+    <section class="checkout-panel">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Checkout</p>
+          <h1>Carrinho e pagamento</h1>
+        </div>
+        <a class="btn ghost small" href="catalogo.html">Continuar comprando</a>
+      </div>
+      <div id="cart-list" class="cart-list"></div>
+      <div class="checkout-options">
+        <h2>Frete</h2>
+        <div id="shipping-options" class="option-list"></div>
+        <label class="check-row">
+          <input id="insurance-check" type="checkbox">
+          <span>Adicionar seguro do produto <small>4% sobre os produtos</small></span>
+        </label>
+      </div>
+      <aside class="summary-box">
+        <div><span>Produtos</span><strong id="summary-products">R$ 0,00</strong></div>
+        <div><span>Frete</span><strong id="summary-shipping">R$ 0,00</strong></div>
+        <div><span>Seguro</span><strong id="summary-insurance">R$ 0,00</strong></div>
+        <div class="total"><span>Total</span><strong id="summary-total">R$ 0,00</strong></div>
+        <button id="checkout-pay" class="btn primary full" type="button">Finalizar e pagar com saldo</button>
+      </aside>
+    </section>
+
+    <section class="history-panel">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Histórico</p>
+          <h2>Meus pedidos</h2>
+        </div>
+      </div>
+      <div id="orders-list" class="order-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>TechZone</strong><p>Loja acadêmica de tecnologia com arquitetura front-end modular.</p></div>
+    <div><strong>Links úteis</strong><a href="catalogo.html">Catálogo</a><a href="pedidos.html">Pedidos</a><a href="fale-conosco.html">Fale Conosco</a><a href="sobre.html">Sobre Nós</a></div>
+    <div><strong>Contato</strong><span>tzstore@gmail.com
+  </span><span>(11) 94002-2026</span><span>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</span></div>
+    <div><strong>Pagamento</strong><span>Saldo TechZone</span><span>Pix, crédito e débito simulados</span></div>
+  </footer>
+
+  <div id="toast-root" aria-live="polite"></div>
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

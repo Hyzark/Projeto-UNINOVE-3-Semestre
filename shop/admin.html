@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone | Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body" data-page="admin">
+  <header class="admin-topbar">
+    <a class="logo admin-logo" href="admin.html"><span>TZ</span>Admin</a>
+    <div class="admin-top-actions">
+      <a class="btn ghost small" href="catalogo.html">Ver loja</a>
+      <button id="logout-btn" class="btn ghost small" type="button">Sair</button>
+    </div>
+  </header>
+
+  <main class="admin-shell">
+    <aside class="admin-side">
+      <button class="admin-nav active" data-admin-section="dashboard" type="button">Dashboard</button>
+      <button class="admin-nav" data-admin-section="produtos" type="button">Produtos</button>
+      <button class="admin-nav" data-admin-section="clientes" type="button">Clientes</button>
+      <button class="admin-nav" data-admin-section="pedidos" type="button">Pedidos</button>
+      <button class="admin-nav" data-admin-section="chamados" type="button">Chamados</button>
+      <button class="admin-nav" data-admin-section="estoque" type="button">Estoque</button>
+      <button class="admin-nav" data-admin-section="vendas" type="button">Vendas</button>
+      <button class="admin-nav" data-admin-section="reajuste" type="button">Reajuste</button>
+    </aside>
+    <section id="admin-content" class="admin-content"></section>
+  </main>
+
+  <div id="toast-root" aria-live="polite"></div>
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

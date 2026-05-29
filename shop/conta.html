@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone | Minha Conta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="conta">
+  <header class="site-header">
+    <a class="logo" href="catalogo.html"><span>TZ</span>TechZone</a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="catalogo.html">Catálogo</a>
+      <a class="client-link" href="pedidos.html">Pedidos</a>
+      <a class="client-link" href="fale-conosco.html">Fale Conosco</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a id="admin-link" class="hidden" href="admin.html">Admin</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-btn client-link" href="pedidos.html" aria-label="Carrinho"><span>Carrinho</span><b id="cart-count">0</b></a>
+      <a id="account-avatar" class="account-avatar client-link" href="conta.html" aria-label="Minha Conta"></a>
+      <button id="logout-btn" class="btn ghost small" type="button">Sair</button>
+    </div>
+  </header>
+
+  <main class="content-wrap account-layout">
+    <section class="account-panel">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Cadastro</p>
+          <h1>Alterar conta</h1>
+          <p class="muted">Atualize seus dados de acesso e contato.</p>
+        </div>
+      </div>
+
+      <form id="account-form" class="form-stack">
+        <div class="account-grid">
+          <label>Nome completo
+            <input id="account-name" autocomplete="name" required>
+          </label>
+          <label>E-mail
+            <input id="account-email" type="email" autocomplete="email" required>
+          </label>
+          <label>Telefone
+            <input id="account-phone" autocomplete="tel" inputmode="numeric" data-phone-mask required>
+          </label>
+          <label>Usuário
+            <input id="account-user" autocomplete="username" required>
+          </label>
+          <label>Nova senha
+            <input id="account-pass" type="password" autocomplete="new-password" placeholder="Deixe em branco para manter">
+          </label>
+        </div>
+        <button class="btn primary" type="submit">Salvar alterações</button>
+      </form>
+    </section>
+
+    <aside class="account-panel deposit-panel">
+      <p class="eyebrow">Saldo</p>
+      <h2>Depositar saldo</h2>
+      <p class="muted">Use este valor para pagar pedidos dentro da loja.</p>
+      <div class="balance-card">
+        <div class="balance-card-head">
+          <span>Saldo atual</span>
+          <button id="toggle-balance" class="eye-btn" type="button" aria-label="Mostrar saldo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+        <strong id="account-balance" data-hidden="true">••••••</strong>
+      </div>
+      <form id="deposit-form" class="form-stack">
+        <label>Valor do depósito
+          <input id="deposit-value" type="number" min="0.01" step="0.01" placeholder="100,00" required>
+        </label>
+        <button class="btn primary full" type="submit">Depositar saldo</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>TechZone</strong><p>Loja acadêmica de tecnologia com arquitetura front-end modular.</p></div>
+    <div><strong>Links úteis</strong><a href="catalogo.html">Catálogo</a><a href="pedidos.html">Pedidos</a><a href="fale-conosco.html">Fale Conosco</a><a href="sobre.html">Sobre Nós</a></div>
+    <div><strong>Contato</strong><span>tzstore@gmail.com
+  </span><span>(11) 94002-2026</span><span>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</span></div>
+    <div><strong>Pagamento</strong><span>Saldo TechZone</span><span>Pix, crédito e débito simulados</span></div>
+  </footer>
+
+  <div id="toast-root" aria-live="polite"></div>
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
