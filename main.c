@@ -1,4 +1,15 @@
 /*
+ *Alex Sandro Limberg da Silva - RA 3126100804
+ *Allan Sandes dos Santos - RA 3025106431
+ *Felipe Aquino - RA 3025100415
+ *Igor Silva Tomaz de Oliveira - RA 3025103357
+ *John Christian Silva de Souza - RA 3025101771
+ *Leonardo Messias Santos Marinho - RA 3025200813
+ *Lucas Henrique Carvalho Xavier - RA 3026100022
+ *Marcus Vinícius Roberto de Carvalho - RA 3025201763
+ *Pedro Henrique Pereira da Silva - RA 3026103385
+ *Vitor Silva Tomaz de Oliveira - RA 3025103356
+ *
  * ============================================================
  *   E-COMMERCE - PROJETO FACULDADE
  *   Modulos: Login, Clientes, Produtos, Pedidos,
